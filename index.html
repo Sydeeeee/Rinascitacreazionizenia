@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RinascitaCreazioneZenia | Borse, Gioielli e Carta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #FBF9F5;
+            --text-color: #2C2A29;
+            --accent-color: #8C7A6B;
+            --card-bg: #FFFFFF;
+            --border-color: #EAE3DC;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+        }
+
+        header {
+            text-align: center;
+            padding: 4rem 1.5rem 2rem;
+            background-color: var(--bg-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+            color: #1A1817;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: var(--accent-color);
+            font-style: italic;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+
+        .about {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 4rem;
+        }
+
+        .about h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .about p {
+            font-size: 1.05rem;
+            color: #555;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+
+        .card-img {
+            height: 250px;
+            background-color: #EFECE6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-color);
+            font-style: italic;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .card-content h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-content p {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.7rem 1.5rem;
+            background-color: var(--text-color);
+            color: #FFF;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-color);
+        }
+
+        .contact-section {
+            background-color: #EFECE6;
+            padding: 4rem 1.5rem;
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .contact-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-section p {
+            margin-bottom: 2rem;
+            color: #555;
+        }
+
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.85rem;
+            color: #777;
+            background-color: #1A1817;
+            color: #EAE3DC;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>RinascitaCreazioneZenia</h1>
+        <p>Borse, gioielli e creazioni in carta plasmate a mano</p>
+    </header>
+
+    <div class="container">
+        
+        <section class="about">
+            <h2>La Mia Filosofia</h2>
+            <p>…Spesso il mio cuore parla attraverso le mie mani e così, da una rinascita personale, nasce la convinzione che anche gli scarti nelle mani giuste possono rinascere. Questi accessori sono realizzati in carta, che normalmente finirebbe al macero, minuziosamente lavorata a mano e trattata per essere resistente e durevole nel tempo. Pezzi unici e originali, leggeri ed ecosostenibili 
+.</p>
+        </section>
+
+        <h2 class="section-title">Le Nostre Collezioni</h2>
+
+        <div class="grid">
+            <!-- Borse -->
+            <div class="card">
+                <div class="card-img">[Foto Borsa Artigianale]</div>
+                <div class="card-content">
+                    <h3>Borse</h3>
+                    <p>Accessori unici realizzati con tessuti ricercati e cura sartoriale per accompagnarti ogni giorno con stile.</p>
+                    <a href="#contatti" class="btn">Richiedi Informazioni</a>
+                </div>
+            </div>
+
+            <!-- Gioielli -->
+            <div class="card">
+                <div class="card-img">[Foto Gioiello Unico]</div>
+                <div class="card-content">
+                    <h3>Gioielli</h3>
+                    <p>Dettagli preziosi e leggeri, creati a mano per valorizzare la tua personalità con un tocco di classe.</p>
+                    <a href="#contatti" class="btn">Richiedi Informazioni</a>
+                </div>
+            </div>
+
+            <!-- Carta -->
+            <div class="card">
+                <div class="card-img">[Foto Creazione in Carta]</div>
+                <div class="card-content">
+                    <h3>Creazioni in Carta</h3>
+                    <p>L'arte della cartotecnica e del design piegato a mano: oggetti decorativi e complementi unici nel loro genere.</p>
+                    <a href="#contatti" class="btn">Richiedi Informazioni</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <section id="contatti" class="contact-section">
+        <h2>Contattaci e Ordina</h2>
+        <p>Vuoi commissionare un pezzo unico o avere maggiori informazioni sui prodotti disponibili? Scrivici direttamente!</p>
+        <div class="social-buttons">
+            <a href="https://wa.me/TUONUMERODITELEFONO" class="btn" target="_blank">Scrivici su WhatsApp</a>
+            <a href="https://instagram.com/TUOPROFILO" class="btn" target="_blank">Seguici su Instagram</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Rinascita Creazione Zenìa. Tutti i diritti riservati.</p>
+    </footer>
+
+</body>
+</html>
